@@ -15,7 +15,6 @@ class JavaGoogleSearchTest extends GebSpec {
         go(HomePage.url)
 
         when: "input 'Java' to the textfield and check results "
-
         waitFor { $(HomePage.googleSearchTextfield).value(Variables.testValue) }
         $(HomePage.googleSearchTextfield) << Keys.chord(Keys.ENTER)
         waitFor { $(HomePage.pageResultsList, 0) }
