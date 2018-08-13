@@ -6,7 +6,6 @@ import spock.lang.Stepwise
 @RunWith(Suite.class)
 @Suite.SuiteClasses([
         JavaGoogleSearchTest.class
-
 ])
 class TestSuite {
 }
